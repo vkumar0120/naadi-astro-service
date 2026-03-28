@@ -1,0 +1,35 @@
+---
+const testimonials = [
+  {
+    name: "Kavitha",
+    text: "Sree Agasthiya Shiva Maha Nadi astrology has completely transformed my life. Through the mystical palm leaves of Vaitheeswaran Koil, I've found profound clarity and guidance that surpasses any other form of astrology I've encountered. The accuracy with which it delves into my past, present, and future is nothing short of miraculous."
+  },
+  {
+    name: "Ganeshkumar",
+    text: "Sree Agasthiya Shiva Maha Nadi astrology is a divine gift that has profoundly impacted my journey. The sacred palm leaves of Vaitheeswaran Koil revealed insights about my life with astonishing accuracy and depth. It's not just about predicting the future; it's about understanding the intricate tapestry of my past and present."
+  },
+  {
+    name: "Shiva Nyanantham",
+    text: "Sree Agasthiya Shiva Maha Nadi astrology has been an absolute revelation in my life. The insights and predictions derived from the ancient palm leaves at Vaitheeswaran Koil have guided me through some of the most pivotal moments. The accuracy and depth of the readings are truly astounding."
+  }
+];
+---
+
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Testimonials</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {testimonials.map(testimonial => (
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl font-bold">
+              {testimonial.name.charAt(0)}
+            </div>
+            <h4 class="ml-4 text-lg font-semibold text-gray-800">{testimonial.name}</h4>
+          </div>
+          <p class="text-gray-600 italic">"{testimonial.text}"</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

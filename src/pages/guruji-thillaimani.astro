@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="Guruji Thillaimani - Nadi Astrology Expert">
+  <Header />
+  
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+          Guruji Thillaimani
+        </h1>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <img 
+              src="/assets/images/nadi/thillaimani1.jpg" 
+              alt="Guruji Thillaimani" 
+              class="rounded-lg shadow-xl w-full"
+            />
+          </div>
+          
+          <div class="space-y-6">
+            <h2 class="text-3xl font-bold text-primary">Master of Nadi Astrology</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              With over 25 years of experience in authentic Nadi Astrology, Guruji Thillaimani has guided thousands of seekers towards clarity, purpose, and spiritual fulfillment. His expertise in reading ancient palm leaf manuscripts has made him one of the most trusted Nadi astrologers in Vaitheeswaran Koil and Trichy.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Guruji specializes in various forms of Nadi readings including Agasthiya Nadi, Siva Nadi, Bhrigu Nadi, and more. His accurate predictions and effective remedial solutions have helped people overcome challenges in health, career, relationships, and spiritual growth.
+            </p>
+            <div class="bg-primary/10 p-6 rounded-lg">
+              <h3 class="text-xl font-bold mb-3 text-gray-800">Services Offered:</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>✓ Individual Palm Leaf Reading</li>
+                <li>✓ Online Nadi Astrology Consultation</li>
+                <li>✓ Remedial Solutions & Poojas</li>
+                <li>✓ Life Path Guidance</li>
+                <li>✓ Career & Marriage Consultation</li>
+              </ul>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="tel:+919500639334" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-secondary transition-colors text-center">
+                Call Now
+              </a>
+              <a href="/contact" class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition-colors text-center">
+                Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+  <WhatsAppButton />
+</Layout>

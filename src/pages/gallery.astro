@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="Gallery - Nadi Astrology Photos and Videos">
+  <Header />
+  
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+        Our Photos
+      </h1>
+      
+      <!-- Gallery Tabs -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="gallery-tab px-6 py-2 rounded-full bg-primary text-white font-semibold" data-category="all">
+          All
+        </button>
+        <button class="gallery-tab px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-primary hover:text-white transition-colors" data-category="office">
+          Office
+        </button>
+        <button class="gallery-tab px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-primary hover:text-white transition-colors" data-category="yaham">
+          Yaham
+        </button>
+        <button class="gallery-tab px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-primary hover:text-white transition-colors" data-category="homam">
+          Homam
+        </button>
+        <button class="gallery-tab px-6 py-2 rounded-full bg-gray-200 text-gray-700 font-semibold hover:bg-primary hover:text-white transition-colors" data-category="videos">
+          Videos
+        </button>
+      </div>
+      
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- YouTube Video -->
+        <div class="gallery-item sm:col-span-2 lg:col-span-2" data-category="videos">
+          <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+            <div class="relative pb-[56.25%] h-0">
+              <iframe 
+                class="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/Q_oJlxgrLS0"
+                title="Nadi Astrology Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Photo Gallery -->
+        {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
+          <div class="gallery-item group cursor-pointer" data-category="office">
+            <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow">
+              <img 
+                src={`/assets/images/nadi/cli${num}.jpg`}
+                alt={`Gallery image ${num}`}
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+      
+      <div class="text-center mt-12">
+        <p class="text-gray-600 mb-6">
+          Experience the authentic Nadi Astrology tradition through our gallery
+        </p>
+        <a href="/contact" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-secondary transition-colors">
+          Book Your Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+  <WhatsAppButton />
+</Layout>
+
+<script>
+  const tabs = document.querySelectorAll('.gallery-tab');
+  const items = document.querySelectorAll('.gallery-item');
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const category = tab.getAttribute('data-category');
+      
+      // Update active tab
+      tabs.forEach(t => {
+        t.classList.remove('bg-primary', 'text-white');
+        t.classList.add('bg-gray-200', 'text-gray-700');
+      });
+      tab.classList.add('bg-primary', 'text-white');
+      tab.classList.remove('bg-gray-200', 'text-gray-700');
+      
+      // Filter items
+      items.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

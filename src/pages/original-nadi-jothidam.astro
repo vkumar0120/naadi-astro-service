@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="Original Nadi Jothidam Services">
+  <Header />
+  
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-8 text-gray-800">
+          Original Nadi Jothidam
+        </h1>
+        
+        <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+          <div>
+            <img 
+              src="/assets/images/nadi/nadi2.png" 
+              alt="Original Nadi Jothidam" 
+              class="rounded-lg shadow-xl w-full"
+            />
+          </div>
+          <div class="space-y-4 text-gray-700 text-lg leading-relaxed">
+            <p>
+              Nadi Astrology can be used to determine one's past and future fate using antiquated palm leaf manuscripts. These ancient texts contain detailed predictions about individuals' lives, written by enlightened sages thousands of years ago.
+            </p>
+            <p>
+              Our center provides authentic original Nadi readings from the sacred palm leaves preserved at Vaitheeswaran Koil. Each leaf contains specific information about an individual's destiny, life path, and karmic journey.
+            </p>
+          </div>
+        </div>
+        
+        <div class="bg-primary/10 rounded-lg p-8 mb-8">
+          <h2 class="text-3xl font-bold mb-6 text-gray-800">What Makes It Original?</h2>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary text-2xl mr-3">•</span>
+              <span>Ancient palm leaf manuscripts dating back thousands of years</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary text-2xl mr-3">•</span>
+              <span>Written by enlightened sages like Agastya, Kaushika, and Vashista</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary text-2xl mr-3">•</span>
+              <span>Identification through unique thumb impressions</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary text-2xl mr-3">•</span>
+              <span>Accurate predictions of past, present, and future events</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary text-2xl mr-3">•</span>
+              <span>Remedial solutions for life challenges</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="text-center">
+          <a href="/contact" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-secondary transition-colors">
+            Get Your Reading
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+  <WhatsAppButton />
+</Layout>

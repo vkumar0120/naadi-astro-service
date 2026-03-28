@@ -1,0 +1,36 @@
+---
+const faqs = [
+  {
+    question: "Which temple is famous for Nadi Astrology?",
+    answer: "Nadi jothidam, a form of Hindu astrology practised in and around Vaitheeswaran temple, is called Vaitheeswaran Koil Nadi astrology or Nadi Jothidam. Vaitheeswaran Koil is the famous Indian temple where Nadi Josiyam is hugely practiced. While Nadi Jyotish is performed in multiple other Indian temples, you can find the best Nadi astrologers in Vaitheeswaran Koil."
+  },
+  {
+    question: "What is the time of Vaitheeswaran Koil Pooja?",
+    answer: "The temple morning timings are 06:00 AM to 01:00 PM, and the evening timings are 04:10 PM to 09:00 PM."
+  },
+  {
+    question: "What is Nadi Astrology?",
+    answer: "Nadi Astrology can be used to determine one's past and future fate using antiquated palm leaf manuscripts. These ancient palm leaves contain detailed predictions about individuals' lives, written by sage Agastya thousands of years ago."
+  },
+  {
+    question: "How can I access online Nadi Astrology services?",
+    answer: "Nadi Jothisham online, Nadi Shastra online and josiyam Online are available to individuals from other countries. Contact +91 95006 39334 for personalized nadi astrologer readings from the comfort of your home."
+  }
+];
+---
+
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Frequently Asked Questions</h2>
+    <div class="max-w-3xl mx-auto space-y-4">
+      {faqs.map((faq, index) => (
+        <details class="bg-gray-50 rounded-lg p-6 cursor-pointer hover:bg-gray-100 transition-colors">
+          <summary class="font-semibold text-lg text-gray-800 cursor-pointer">
+            {faq.question}
+          </summary>
+          <p class="mt-4 text-gray-600">{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
