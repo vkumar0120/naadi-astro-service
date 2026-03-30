@@ -11,7 +11,7 @@ const {
   title, 
   description = "Sree Agasthiya Maha Siva Nadi Astrology - Expert Nadi Astrology Services in Vaitheeswaran Koil and Trichy",
   keywords = "nadi astrology, siva nadi, vaitheeswaran koil, nadi jothidam, palm leaf astrology, agasthiya nadi, tamil nadu astrology, trichy astrologer, accurate nadi predictions, online nadi reading",
-  image = "https://agasthiyamahasivanaadijothidam.com/assets/images/nadi-astrology-og.jpg",
+  image = "https://naadiastroservice.com/assets/images/nadi-astrology-og.jpg",
   url = Astro.url.href
 } = Astro.props;
 
@@ -44,6 +44,112 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sree Agasthiya Maha Siva Nadi Astrology",
+        "image": "https://naadiastroservice.com/assets/images/nadi-astrology-og.jpg",
+        "description": "Authentic Nadi Astrology services with ancient palm leaf predictions. Expert readings by Guruji Thillaimani with 25+ years experience.",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "5/165, Big Street, Near Vaitheeswaran Temple",
+            "addressLocality": "Vaitheeswaran Koil",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "609117",
+            "addressCountry": "IN"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "B14/27, EVS Street, Renga Nagar, KVB Bank Upstairs",
+            "addressLocality": "Srirangam, Trichy",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "620006",
+            "addressCountry": "IN"
+          }
+        ],
+        "geo": [
+          {
+            "@type": "GeoCoordinates",
+            "latitude": "11.0833",
+            "longitude": "79.5167"
+          },
+          {
+            "@type": "GeoCoordinates",
+            "latitude": "10.8505",
+            "longitude": "78.6956"
+          }
+        ],
+        "url": "https://naadiastroservice.com",
+        "telephone": ["+919500639334", "+919842020237"],
+        "email": "ma.thillaimani@gmail.com",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "06:00",
+            "closes": "21:00"
+          }
+        ],
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.facebook.com/agasthiyamahasivanaadi",
+          "https://www.instagram.com/agasthiyamahasivanaadi",
+          "https://www.youtube.com/@agasthiyamahasivanaadi"
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Vaitheeswaran Koil"
+          },
+          {
+            "@type": "City",
+            "name": "Trichy"
+          },
+          {
+            "@type": "State",
+            "name": "Tamil Nadu"
+          },
+          {
+            "@type": "Country",
+            "name": "India"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Nadi Astrology Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Agasthiya Nadi Astrology",
+                "description": "Ancient palm leaf predictions from Sage Agastya"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Siva Nadi Astrology",
+                "description": "Divine predictions from Lord Shiva for spiritual guidance"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Online Nadi Consultation",
+                "description": "Remote palm leaf reading via video call"
+              }
+            }
+          ]
+        }
+      }
+    </script>
     
     <title>{title}</title>
   </head>

@@ -1,0 +1,7 @@
+# robots.txt for Sree Agasthiya Maha Siva Nadi Astrology
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://naadiastroservice.com/sitemap.xml

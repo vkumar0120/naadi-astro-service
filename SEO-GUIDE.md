@@ -31,7 +31,7 @@
 1. Go to [Google Search Console](https://search.google.com/search-console)
 2. Click "Add Property"
 3. Choose **Domain** property type
-4. Enter: `agasthiyamahasivanaadijothidam.com`
+4. Enter: `naadiastroservice.com`
 
 ### Step 2: DNS Verification (AWS Route 53)
 Google will provide a TXT record:
@@ -46,7 +46,7 @@ Value: google-site-verification=XXXXXXXXXXXXX
 2. Select your domain
 3. Create Record:
    - Type: `TXT`
-   - Name: `agasthiyamahasivanaadijothidam.com`
+   - Name: `naadiastroservice.com`
    - Value: Copy from Google (paste the entire verification string)
    - TTL: `300`
 4. Click "Create records"
@@ -55,7 +55,7 @@ Value: google-site-verification=XXXXXXXXXXXXX
 ### Step 3: Submit Sitemap
 After verification:
 1. In Google Search Console → Sitemaps
-2. Add sitemap URL: `https://agasthiyamahasivanaadijothidam.com/sitemap.xml`
+2. Add sitemap URL: `https://naadiastroservice.com/sitemap.xml`
 3. Click "Submit"
 
 ---
