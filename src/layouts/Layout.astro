@@ -2,19 +2,49 @@
 interface Props {
   title: string;
   description?: string;
+  keywords?: string;
+  image?: string;
+  url?: string;
 }
 
-const { title, description = "Sree Agasthiya Maha Siva Nadi Astrology - Expert Nadi Astrology Services in Vaitheeswaran Koil and Trichy" } = Astro.props;
+const { 
+  title, 
+  description = "Sree Agasthiya Maha Siva Nadi Astrology - Expert Nadi Astrology Services in Vaitheeswaran Koil and Trichy",
+  keywords = "nadi astrology, siva nadi, vaitheeswaran koil, nadi jothidam, palm leaf astrology, agasthiya nadi, tamil nadu astrology, trichy astrologer, accurate nadi predictions, online nadi reading",
+  image = "https://agasthiyamahasivanaadijothidam.com/assets/images/nadi-astrology-og.jpg",
+  url = Astro.url.href
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Guruji Sri Thillaimani - Sree Agasthiya Maha Siva Nadi Astrology" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="Sree Agasthiya Maha Siva Nadi Astrology" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    
     <title>{title}</title>
   </head>
   <body class="bg-gray-50">
