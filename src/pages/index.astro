@@ -20,20 +20,20 @@ import WhyUs from '../components/WhyUs.astro';
   <section class="relative bg-gradient-to-br from-primary via-amber-600 to-secondary text-white py-20 md:py-32">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
           Sree Agasthiya Maha Siva Nadi Astrology
         </h1>
-        <div class="mb-8 flex justify-center">
+        <div class="mb-8 flex justify-center animate-fade-in" style="animation-delay: 0.2s;">
           <img src="/assets/images/nadi/mem2.jpg" alt="Nadi Astrology" class="rounded-lg shadow-lg max-w-full h-auto md:max-w-2xl" />
         </div>
-        <p class="text-xl md:text-2xl mb-8">
+        <p class="text-xl md:text-2xl mb-8 animate-fade-in" style="animation-delay: 0.4s;">
           Ancient Palm Leaf Predictions from Vaitheeswaran Koil
         </p>
-        <p class="text-lg mb-8 leading-relaxed">
+        <p class="text-lg mb-8 leading-relaxed animate-fade-in" style="animation-delay: 0.6s;">
           Discover your destiny through the sacred palm leaves of Nadi Astrology. 
           Expert guidance for past, present, and future with 25+ years of experience.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style="animation-delay: 0.8s;">
           <a href="/contact" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
             Book Consultation
           </a>
@@ -46,18 +46,24 @@ import WhyUs from '../components/WhyUs.astro';
   </section>
 
   <!-- About Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">About Online Nadi Astrology</h2>
+  <section class="py-16 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden">
+    <!-- Traditional Pattern Background -->
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(139, 69, 19, 0.2) 35px, rgba(139, 69, 19, 0.2) 70px), repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(184, 134, 11, 0.2) 35px, rgba(184, 134, 11, 0.2) 70px);"></div>
+    <div class="absolute top-10 left-10 w-32 h-32 border-4 border-primary/20 rounded-full"></div>
+    <div class="absolute bottom-10 right-10 w-40 h-40 border-4 border-secondary/20 rounded-full"></div>
+    <div class="absolute top-1/2 right-20 w-24 h-24 border-4 border-primary/10 transform rotate-45"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12">
+        <h2 class="text-4xl font-bold text-center mb-8 text-gray-800 animate-slide-in-left">About Online Nadi Astrology</h2>
         <div class="prose prose-lg max-w-none text-gray-700">
-          <p class="text-lg leading-relaxed mb-6">
+          <p class="text-lg leading-relaxed mb-6 animate-fade-in" style="animation-delay: 0.2s;">
             The Nadi reader gives the aspirant's thumb impression. It is scientifically proven that every individual's whirls, loops, and movements are unique and almost impossible to duplicate. Nadi Jothisham online, Nadi Shastra online and josiyam Online are also available to distant individuals from other countries.
           </p>
-          <p class="text-lg leading-relaxed mb-6">
+          <p class="text-lg leading-relaxed mb-6 animate-fade-in" style="animation-delay: 0.4s;">
             Get personalized nadi astrologer readings from experts at Vaitheeswaran Koil. Our online nadi services allow you to get accurate and reliable advice from the comfort of your home. Our famous astrologers are available to provide the best guidance.
           </p>
-          <div class="text-center mt-8">
+          <div class="text-center mt-8 animate-fade-in" style="animation-delay: 0.6s;">
             <a href="/guruji-thillaimani" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-secondary transition-colors">
               Read More About Our Guruji
             </a>
@@ -74,12 +80,12 @@ import WhyUs from '../components/WhyUs.astro';
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Vaitheeswaran Koil</h2>
+        <h2 class="text-4xl font-bold text-center mb-8 text-gray-800 animate-slide-in-right">Vaitheeswaran Koil</h2>
         <div class="prose prose-lg max-w-none text-gray-700">
-          <p class="text-lg leading-relaxed mb-6">
+          <p class="text-lg leading-relaxed mb-6 animate-fade-in" style="animation-delay: 0.2s;">
             Vaitheeswaran Koil, a renowned pilgrimage site in Tamil Nadu, India, holds significant importance in Sree Agasthiya Shiva Maha Nadi astrology, a divine form of predictive science. Nestled along the banks of the sacred Vaitheeswaran Temple dedicated to Lord Shiva, this ancient practice is believed to have originated from the sage Agastya, who documented the destinies of individuals on palm leaves thousands of years ago.
           </p>
-          <p class="text-lg leading-relaxed mb-6">
+          <p class="text-lg leading-relaxed mb-6 animate-fade-in" style="animation-delay: 0.4s;">
             Seekers journey to Vaitheeswaran Koil seeking the guidance of these mystical palm leaves, which are said to hold precise insights into one's past, present, and future. The spiritual ambiance of the temple and the resonance of the nearby Pamba River add to the mystique of the experience, drawing pilgrims and astrologers alike in search of clarity, healing, and spiritual growth.
           </p>
         </div>
@@ -116,11 +122,11 @@ import WhyUs from '../components/WhyUs.astro';
   <!-- CTA Section -->
   <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Discover Your Destiny?</h2>
-      <p class="text-xl mb-8 max-w-2xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-bounce-in">Ready to Discover Your Destiny?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto animate-fade-in" style="animation-delay: 0.3s;">
         Contact us today for accurate Nadi Astrology readings and guidance
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style="animation-delay: 0.5s;">
         <a href="tel:+919500639334" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
           Call: +91 95006 39334
         </a>
