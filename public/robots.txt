@@ -4,4 +4,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://naadiastroservice.com/sitemap-index.xml
+Sitemap: https://naadiastroservice.com/sitemap.xml
