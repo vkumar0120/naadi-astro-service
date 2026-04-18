@@ -1,0 +1,70 @@
+---
+// Reading Process Section - Similar to Palm Leaf Library
+const steps = [
+  {
+    icon: '👆',
+    title: 'Thumbprint',
+    description: 'All you need to find your palm leaf is your thumbprint, your gender and your country of birth'
+  },
+  {
+    icon: '🔍',
+    title: 'The Search',
+    description: 'Depending on the thumbprint pattern, bundles of palm leaves are selected from the Nadi library'
+  },
+  {
+    icon: '🎯',
+    title: 'Identification',
+    description: 'In a live session (online/offline), your palm leaf is identified from the bundles through a matching process'
+  },
+  {
+    icon: '📖',
+    title: 'Reading',
+    description: 'After your palm leaf has been found, the complete details of your past, present and future will be read to you'
+  },
+  {
+    icon: '🕉️',
+    title: 'Remedies',
+    description: 'Personalized spiritual remedies and guidance to overcome obstacles and enhance your life path'
+  }
+];
+---
+
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-5xl font-bold text-center mb-6 bg-gradient-to-r from-primary to-spiritual bg-clip-text text-transparent">Reading Process</h2>
+    <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto text-xl">
+      Discover how we find your unique palm leaf through our authentic and time-tested process
+    </p>
+    
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+        {steps.map((step, index) => (
+          <div class="relative">
+            {/* Connecting line for desktop */}
+            {index < steps.length - 1 && (
+              <div class="hidden md:block absolute top-20 left-1/2 w-full h-1 bg-gradient-to-r from-primary via-spiritual to-gold z-0"></div>
+            )}
+            
+            <div class="relative z-10 text-center">
+              {/* Icon Circle */}
+              <div class="w-40 h-40 mx-auto mb-6 bg-gradient-to-br from-primary via-spiritual to-secondary rounded-full flex items-center justify-center text-7xl shadow-2xl shadow-spiritual transform hover:scale-110 hover:rotate-6 transition-all duration-300">
+                {step.icon}
+              </div>
+              
+              {/* Step Number */}
+              <div class="inline-block bg-gradient-to-r from-gold to-accent text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mb-3 shadow-lg text-lg">
+                {index + 1}
+              </div>
+              
+              {/* Title */}
+              <h3 class="text-2xl font-bold mb-4 text-primary">{step.title}</h3>
+              
+              {/* Description */}
+              <p class="text-gray-600 text-base leading-relaxed">{step.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,67 @@
+---
+// What You'll Discover Section
+const discoveries = [
+  {
+    icon: '💼',
+    title: 'Career',
+    description: 'Guidance on your professional path, business opportunities, and career growth'
+  },
+  {
+    icon: '❤️',
+    title: 'Relationships & Children',
+    description: 'Insights about marriage, partnerships, family life, and children'
+  },
+  {
+    icon: '🏥',
+    title: 'Health',
+    description: 'Information about your physical and mental well-being, and preventive measures'
+  },
+  {
+    icon: '💰',
+    title: 'Material Wealth',
+    description: 'Financial prospects, property, investments, and wealth accumulation'
+  },
+  {
+    icon: '⚠️',
+    title: 'Challenges',
+    description: 'Obstacles in your path and how to overcome them with proper guidance'
+  },
+  {
+    icon: '🔮',
+    title: 'Remedies',
+    description: 'Personalized spiritual remedies, mantras, and rituals for a better life'
+  }
+];
+---
+
+<section class="py-20 bg-gradient-to-br from-purple-50 via-indigo-50 to-violet-50 relative overflow-hidden">
+  <!-- Decorative Elements -->
+  <div class="absolute top-1/4 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
+  <div class="absolute bottom-1/4 right-10 w-80 h-80 bg-gold/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1.5s;"></div>
+  
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-5xl font-bold text-center mb-6 bg-gradient-to-r from-primary to-spiritual bg-clip-text text-transparent">Discover What's Meant for You</h2>
+    <p class="text-center text-gray-700 mb-16 max-w-3xl mx-auto text-2xl leading-relaxed">
+      Your Nadi Leaf holds the hidden story of your life and the future waiting for you. Every line reveals deep insights, blessings, and guidance meant only for your soul's journey.
+    </p>
+    
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {discoveries.map((item) => (
+        <div class="bg-white rounded-2xl p-8 shadow-xl shadow-spiritual hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 border-t-4 border-primary group">
+          <div class="text-7xl mb-6 text-center transform group-hover:scale-110 transition-transform duration-300 filter drop-shadow-lg">{item.icon}</div>
+          <h3 class="text-2xl font-bold mb-4 text-primary text-center">{item.title}</h3>
+          <p class="text-gray-600 text-center leading-relaxed text-lg">{item.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-16 space-x-4">
+      <a href="/contact" class="inline-block bg-gradient-to-r from-primary to-spiritual text-white px-12 py-5 rounded-full font-bold text-xl hover:shadow-spiritual transform hover:scale-105 transition-all duration-300 shadow-xl">
+        Request a Call Back
+      </a>
+      <a href="/nadi-astrology-procedure" class="inline-block border-3 border-primary text-primary px-12 py-5 rounded-full font-bold text-xl hover:bg-primary hover:text-white transition-all duration-300 shadow-xl">
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>

@@ -7,12 +7,18 @@ import Services from '../components/Services.astro';
 import Testimonials from '../components/Testimonials.astro';
 import FAQ from '../components/FAQ.astro';
 import WhyUs from '../components/WhyUs.astro';
+import ReadingProcess from '../components/ReadingProcess.astro';
+import DiscoverSection from '../components/DiscoverSection.astro';
+import TrustBadges from '../components/TrustBadges.astro';
+import CallbackForm from '../components/CallbackForm.astro';
+import WhatsIncluded from '../components/WhatsIncluded.astro';
+import FounderSection from '../components/FounderSection.astro';
 ---
 
 <Layout 
-  title="Sree Agasthiya Maha Siva Nadi Astrology - Vaitheeswaran Koil"
-  description="Authentic Nadi Astrology readings in Vaitheeswaran Koil & Trichy. Ancient palm leaf predictions with 25+ years experience. Book your consultation with Guruji Thillaimani today."
-  keywords="nadi astrology, vaitheeswaran koil, siva nadi, palm leaf astrology, nadi jothidam, agasthiya nadi, trichy astrologer, tamil nadu nadi reading"
+  title="Best Nadi Astrology in Vaitheeswaran Koil | Authentic Palm Leaf Readings by Guruji Thillaimani"
+  description="Discover your destiny with authentic Nadi Astrology readings in Vaitheeswaran Koil & Trichy. Ancient palm leaf predictions by expert astrologer Guruji Thillaimani with 25+ years experience. Online & in-person consultations available. Book now!"
+  keywords="nadi astrology, vaitheeswaran koil nadi, siva nadi, palm leaf astrology, nadi jothidam, agasthiya nadi, trichy astrologer, tamil nadu nadi reading, authentic nadi astrology, online nadi reading, guruji thillaimani, best nadi astrologer"
 >
   <Header />
   
@@ -21,21 +27,21 @@ import WhyUs from '../components/WhyUs.astro';
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto text-center">
         <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in-up">
-          Sree Agasthiya Maha Siva Nadi Astrology
+          Your Life Written on Ancient Palm Leaves
         </h1>
-        <div class="mb-8 flex justify-center animate-fade-in" style="animation-delay: 0.2s;">
-          <img src="/assets/images/nadi/mem2.jpg" alt="Nadi Astrology" class="rounded-lg shadow-lg max-w-full h-auto md:max-w-2xl" />
-        </div>
-        <p class="text-xl md:text-2xl mb-8 animate-fade-in" style="animation-delay: 0.4s;">
-          Ancient Palm Leaf Predictions from Vaitheeswaran Koil
+        <p class="text-xl md:text-2xl mb-8 animate-fade-in" style="animation-delay: 0.2s;">
+          Discover the predictions and guidance recorded centuries ago — uniquely for you
         </p>
+        <div class="mb-8 flex justify-center animate-fade-in" style="animation-delay: 0.4s;">
+          <img src="/assets/images/nadi/mem2.jpg" alt="Ancient Nadi Palm Leaf Astrology Reading by Guruji Thillaimani at Vaitheeswaran Koil Temple - Authentic Spiritual Guidance" class="rounded-lg shadow-lg max-w-full h-auto md:max-w-2xl" />
+        </div>
         <p class="text-lg mb-8 leading-relaxed animate-fade-in" style="animation-delay: 0.6s;">
-          Discover your destiny through the sacred palm leaves of Nadi Astrology. 
-          Expert guidance for past, present, and future with 25+ years of experience.
+          Authentic Sree Agasthiya Maha Siva Nadi Astrology from Vaitheeswaran Koil. 
+          Expert guidance for your past, present, and future with 25+ years of experience.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style="animation-delay: 0.8s;">
           <a href="/contact" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
-            Book Consultation
+            Request Call Back
           </a>
           <a href="tel:+919500639334" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors">
             Call: +91 95006 39334
@@ -45,7 +51,13 @@ import WhyUs from '../components/WhyUs.astro';
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- Trust Badges -->
+  <TrustBadges />
+
+  <!-- Founder Section -->
+  <FounderSection />
+
+  <!-- About Palm Leaves Section -->
   <section class="py-16 bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 relative overflow-hidden">
     <!-- Traditional Pattern Background -->
     <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(139, 69, 19, 0.2) 35px, rgba(139, 69, 19, 0.2) 70px), repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(184, 134, 11, 0.2) 35px, rgba(184, 134, 11, 0.2) 70px);"></div>
@@ -55,23 +67,30 @@ import WhyUs from '../components/WhyUs.astro';
     
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-12">
-        <h2 class="text-4xl font-bold text-center mb-8 text-gray-800 animate-slide-in-left">About Online Nadi Astrology</h2>
+        <h2 class="text-4xl font-bold text-center mb-8 text-gray-800 animate-slide-in-left">About Palm Leaves</h2>
         <div class="prose prose-lg max-w-none text-gray-700">
           <p class="text-lg leading-relaxed mb-6 animate-fade-in" style="animation-delay: 0.2s;">
-            The Nadi reader gives the aspirant's thumb impression. It is scientifically proven that every individual's whirls, loops, and movements are unique and almost impossible to duplicate. Nadi Jothisham online, Nadi Shastra online and josiyam Online are also available to distant individuals from other countries.
+            Palm Leaves are ancient manuscripts written by enlightened sages thousands of years ago, who foresaw the lives of millions of souls. These leaves contain your life blueprint—your destiny, challenges, purpose, relationships, career, karma, remedies, and what lies ahead.
           </p>
           <p class="text-lg leading-relaxed mb-6 animate-fade-in" style="animation-delay: 0.4s;">
-            Get personalized nadi astrologer readings from experts at Vaitheeswaran Koil. Our online nadi services allow you to get accurate and reliable advice from the comfort of your home. Our famous astrologers are available to provide the best guidance.
+            Each leaf is written for a specific individual and is revealed only when the time is right. The Nadi reader uses your thumb impression to locate your unique palm leaf. It is scientifically proven that every individual's whirls, loops, and movements are unique and almost impossible to duplicate.
           </p>
-          <div class="text-center mt-8 animate-fade-in" style="animation-delay: 0.6s;">
-            <a href="/guruji-thillaimani" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-secondary transition-colors">
-              Read More About Our Guruji
-            </a>
-          </div>
+          <p class="text-lg leading-relaxed mb-6 animate-fade-in" style="animation-delay: 0.6s;">
+            A Nadi reading helps people understand their true path, make aligned decisions, clear karmic blocks, and move forward with confidence. Get personalized Nadi astrology readings from our authentic center at Vaitheeswaran Koil, available both online and in-person.
+          </p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Discover What's Meant for You -->
+  <DiscoverSection />
+
+  <!-- Reading Process -->
+  <ReadingProcess />
+
+  <!-- What's Included -->
+  <WhatsIncluded />
 
   <!-- Services Section -->
   <Services />
@@ -116,24 +135,34 @@ import WhyUs from '../components/WhyUs.astro';
   <!-- Testimonials -->
   <Testimonials />
 
+  <!-- Callback Form -->
+  <CallbackForm />
+
   <!-- FAQ Section -->
   <FAQ />
 
   <!-- CTA Section -->
-  <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-bounce-in">Ready to Discover Your Destiny?</h2>
-      <p class="text-xl mb-8 max-w-2xl mx-auto animate-fade-in" style="animation-delay: 0.3s;">
-        Contact us today for accurate Nadi Astrology readings and guidance
+  <section class="py-16 bg-gradient-to-br from-primary via-amber-600 to-secondary text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2"></div>
+    </div>
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <div class="text-6xl mb-6 animate-bounce-in">🕉️</div>
+      <h2 class="text-3xl md:text-5xl font-bold mb-6 animate-bounce-in">Find Your Palm Leaf Today!</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto animate-fade-in leading-relaxed" style="animation-delay: 0.3s;">
+        Ancient Indian sages wrote the destinies of future seekers on sacred palm leaves, and one of them may be yours. 
+        We help you find your leaf and receive its guidance, giving you clarity and direction for your life's path.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style="animation-delay: 0.5s;">
-        <a href="tel:+919500639334" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+        <a href="/contact" class="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-xl">
+          Request Call Back
+        </a>
+        <a href="tel:+919500639334" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transform hover:scale-105 transition-all duration-300">
           Call: +91 95006 39334
         </a>
-        <a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition-colors">
-          Contact Us
-        </a>
       </div>
+      <p class="mt-6 text-white/90 text-sm">✅ Authentic readings from Vaitheeswaran Koil • 🎥 Video recording included • 💯 25+ years experience</p>
     </div>
   </section>
 

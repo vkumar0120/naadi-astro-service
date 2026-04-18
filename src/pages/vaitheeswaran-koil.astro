@@ -6,13 +6,59 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 ---
 
 <Layout 
-  title="Vaitheeswaran Koil - Sacred Temple of Nadi Astrology"
-  description="Vaitheeswaran Koil is the most sacred center for Nadi Astrology in Tamil Nadu. Visit the ancient temple of Lord Shiva and get authentic palm leaf readings."
-  keywords="vaitheeswaran koil, vaitheeswarankoil temple, nadi astrology center, sacred nadi temple, lord shiva temple, tamil nadu astrology temple"
+  title="Vaitheeswaran Koil Nadi Astrology - Sacred Temple & Center for Authentic Palm Leaf Readings"
+  description="Vaitheeswaran Koil is the most sacred center for authentic Nadi Astrology in Tamil Nadu, India. Visit the ancient Lord Shiva temple and experience genuine palm leaf readings by expert astrologers. Get accurate predictions about your past, present, and future from the holy land of Nadi Jothidam."
+  keywords="vaitheeswaran koil, vaitheeswarankoil temple, nadi astrology center, sacred nadi temple, lord shiva temple, tamil nadu astrology temple, vaitheeswaran koil nadi, authentic nadi center, vaitheeswaran koil astrology, nadi jothidam temple"
 >
   <Header />
   
-  <section class="py-16 bg-white">
+  <!-- Hero Section with Image -->
+  <section class="relative bg-gradient-to-br from-primary via-spiritual to-secondary text-white py-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-10 right-10 w-72 h-72 bg-gold rounded-full blur-3xl animate-float"></div>
+      <div class="absolute bottom-20 left-10 w-96 h-96 bg-purple-light rounded-full blur-3xl animate-float" style="animation-delay: 1s;"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="max-w-5xl mx-auto text-center mb-10">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
+          <span class="text-gold-light">Vaitheeswaran Koil</span>
+        </h1>
+        <p class="text-2xl mb-8 animate-fade-in" style="animation-delay: 0.2s;">
+          The Sacred Center of Nadi Astrology
+        </p>
+      </div>
+      
+      <!-- Temple Image Section -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div class="relative group animate-fade-in" style="animation-delay: 0.4s;">
+          <div class="absolute inset-0 bg-gradient-to-br from-gold to-accent blur-2xl opacity-30 group-hover:opacity-50 transition-opacity animate-pulse-slow"></div>
+          <img 
+            src="/assets/images/nadi/vaitheeswaran-koil-temple.jpg" 
+            alt="Vaitheeswaran Koil Temple" 
+            class="relative rounded-2xl shadow-2xl shadow-spiritual w-full h-auto border-4 border-gold/30 group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute bottom-4 left-4 right-4 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-lg">
+            <p class="text-white font-bold text-lg">Sacred Temple of Lord Shiva</p>
+          </div>
+        </div>
+        
+        <div class="relative group animate-fade-in" style="animation-delay: 0.6s;">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary to-spiritual blur-2xl opacity-30 group-hover:opacity-50 transition-opacity animate-pulse-slow" style="animation-delay: 1s;"></div>
+          <img 
+            src="/assets/images/nadi/history.jpg" 
+            alt="Ancient Palm Leaves" 
+            class="relative rounded-2xl shadow-2xl shadow-spiritual w-full h-auto border-4 border-gold/30 group-hover:scale-105 transition-transform duration-500"
+          />
+          <div class="absolute bottom-4 left-4 right-4 bg-gradient-to-t from-black/80 to-transparent p-4 rounded-lg">
+            <p class="text-white font-bold text-lg">Ancient Nadi Palm Leaves</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="py-20 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">

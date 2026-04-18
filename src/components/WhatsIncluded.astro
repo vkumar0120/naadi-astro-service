@@ -1,0 +1,56 @@
+---
+// What's Included Section
+const inclusions = [
+  'Locating the bundles that might contain your Nadi Leaf from our authentic library',
+  'Complete matching process (online or in-person) to identify your unique palm leaf',
+  'Reading of the General Chapter - Your life blueprint',
+  'Reading of specific chapters based on your queries',
+  'Personalized remedies and spiritual guidance',
+  'Video or audio recording of your complete reading session',
+  'Photo of your actual Nadi Leaf (where applicable)',
+  'Post-reading consultation and clarifications'
+];
+---
+
+<section class="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-spiritual bg-clip-text text-transparent">What's Included in Your Nadi Reading</h2>
+        <p class="text-2xl text-gray-700">Complete and authentic Nadi Astrology service package</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-2xl shadow-spiritual p-10 md:p-14 border border-purple-100">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {inclusions.map((item, index) => (
+            <div class="flex items-start space-x-4 p-5 bg-gradient-to-r from-primary/5 to-spiritual/5 rounded-xl hover:shadow-lg hover:scale-105 transition-all duration-300 border border-primary/10">
+              <div class="flex-shrink-0">
+                <div class="w-10 h-10 bg-gradient-to-br from-primary to-spiritual rounded-full flex items-center justify-center text-white font-bold shadow-md">
+                  {index + 1}
+                </div>
+              </div>
+              <p class="text-gray-800 leading-relaxed pt-1.5 text-lg font-medium">{item}</p>
+            </div>
+          ))}
+        </div>
+
+        <div class="mt-12 pt-10 border-t-2 border-gray-200">
+          <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-3 border-green-500 rounded-2xl p-8 text-center shadow-lg">
+            <div class="text-5xl mb-4">✅</div>
+            <h3 class="text-3xl font-bold text-gray-800 mb-3">Satisfaction Guaranteed</h3>
+            <p class="text-gray-700 text-xl">Authentic readings backed by 25+ years of experience in Nadi Astrology from Vaitheeswaran Koil</p>
+          </div>
+        </div>
+
+        <div class="text-center mt-10 space-x-4">
+          <a href="/contact" class="inline-block bg-gradient-to-r from-primary to-spiritual text-white px-12 py-5 rounded-full font-bold text-xl hover:shadow-spiritual transform hover:scale-105 transition-all duration-300 shadow-xl">
+            Book Your Reading Now
+          </a>
+          <a href="tel:+919500639334" class="inline-block border-3 border-primary text-primary px-12 py-5 rounded-full font-bold text-xl hover:bg-primary hover:text-white transition-all duration-300 shadow-xl">
+            Call: +91 95006 39334
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -33,15 +33,21 @@ const features = [
 ];
 ---
 
-<section class="py-16 bg-gradient-to-br from-primary to-secondary text-white">
-  <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12">Why Choose Us?</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<section class="py-20 bg-gradient-to-br from-primary via-spiritual to-secondary text-white relative overflow-hidden">
+  <!-- Decorative Background -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-20 left-20 w-80 h-80 bg-gold rounded-full blur-3xl animate-pulse-slow"></div>
+    <div class="absolute bottom-20 right-20 w-96 h-96 bg-purple-light rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1.5s;"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-5xl font-bold text-center mb-16">Why Choose <span class="text-gold-light">Us?</span></h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
       {features.map(feature => (
-        <div class="text-center bg-white/10 backdrop-blur-sm p-6 rounded-lg hover:bg-white/20 transition-all">
-          <div class="text-5xl mb-4">{feature.icon}</div>
-          <h3 class="text-xl font-bold mb-2">{feature.title}</h3>
-          <p class="text-gray-100">{feature.description}</p>
+        <div class="text-center bg-white/15 backdrop-blur-md p-8 rounded-2xl hover:bg-white/25 transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 shadow-xl border border-white/20">
+          <div class="text-7xl mb-6 filter drop-shadow-lg">{feature.icon}</div>
+          <h3 class="text-2xl font-bold mb-3">{feature.title}</h3>
+          <p class="text-gray-100 text-lg">{feature.description}</p>
         </div>
       ))}
     </div>

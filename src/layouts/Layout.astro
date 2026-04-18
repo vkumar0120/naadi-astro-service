@@ -26,6 +26,22 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <meta name="author" content="Guruji Sri Thillaimani - Sree Agasthiya Maha Siva Nadi Astrology" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="IN-TN" />
+    <meta name="geo.placename" content="Vaitheeswaran Koil, Trichy" />
+    <meta name="geo.position" content="11.0833;79.5167" />
+    <meta name="ICBM" content="11.0833, 79.5167" />
+    
+    <!-- Additional SEO -->
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="General" />
+    <meta name="distribution" content="global" />
+    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -55,6 +71,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         "name": "Sree Agasthiya Maha Siva Nadi Astrology",
         "image": "https://naadiastroservice.com/assets/images/nadi-astrology-og.jpg",
         "description": "Authentic Nadi Astrology services with ancient palm leaf predictions. Expert readings by Guruji Thillaimani with 25+ years experience.",
+        "@id": "https://naadiastroservice.com",
         "address": [
           {
             "@type": "PostalAddress",
@@ -149,6 +166,84 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
               }
             }
           ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "1250",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Guruji Sri Thillaimani",
+          "jobTitle": "Senior Nadi Astrologer",
+          "description": "Expert Nadi Astrologer with 25+ years of experience in authentic palm leaf readings",
+          "email": "ma.thillaimani@gmail.com",
+          "telephone": "+919500639334"
+        },
+        "paymentAccepted": "Cash, UPI, Bank Transfer, Online Payment",
+        "currenciesAccepted": "INR, USD"
+      }
+    </script>
+    
+    <!-- Person Schema for Founder -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Guruji Sri Thillaimani",
+        "jobTitle": "Senior Nadi Astrologer & Spiritual Guide",
+        "description": "Renowned Nadi Astrologer with over 25 years of experience in authentic palm leaf readings. Expert in Agasthiya Nadi, Siva Nadi, and traditional Vedic astrology.",
+        "email": "ma.thillaimani@gmail.com",
+        "telephone": ["+919500639334", "+919842020237"],
+        "url": "https://naadiastroservice.com/guruji-thillaimani",
+        "image": "https://naadiastroservice.com/assets/images/nadi/thillaimani1.jpg",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Sree Agasthiya Maha Siva Nadi Astrology"
+        },
+        "knowsAbout": ["Nadi Astrology", "Palm Leaf Reading", "Vedic Astrology", "Spiritual Guidance", "Karma Remedies"],
+        "alumniOf": "Traditional Nadi Astrology Lineage",
+        "award": "Authentic Nadi Astrologer Recognition",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Sree Agasthiya Maha Siva Nadi Astrology"
+        }
+      }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://naadiastroservice.com"
+          }
+        ]
+      }
+    </script>
+    
+    <!-- Website Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sree Agasthiya Maha Siva Nadi Astrology",
+        "url": "https://naadiastroservice.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://naadiastroservice.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sree Agasthiya Maha Siva Nadi Astrology"
         }
       }
     </script>

@@ -1,0 +1,41 @@
+---
+// Trust Badges Section
+const badges = [
+  {
+    icon: '💯',
+    title: '100% Authentic',
+    description: 'Original Nadi readings from Vaitheeswaran Koil'
+  },
+  {
+    icon: '👥',
+    title: '10,000+ Happy Clients',
+    description: 'Trusted by thousands worldwide'
+  },
+  {
+    icon: '🎥',
+    title: 'Video Recording',
+    description: 'Get recording of your complete reading session'
+  },
+  {
+    icon: '✅',
+    title: 'Satisfaction Guaranteed',
+    description: 'Expert guidance with 25+ years experience'
+  }
+];
+---
+
+<section class="py-14 bg-white border-y-4 border-primary/20 shadow-spiritual">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+      {badges.map((badge) => (
+        <div class="text-center group">
+          <div class="text-6xl md:text-7xl mb-4 transform group-hover:scale-110 transition-transform duration-300 filter drop-shadow-lg">
+            {badge.icon}
+          </div>
+          <h3 class="font-bold text-primary mb-2 text-base md:text-xl">{badge.title}</h3>
+          <p class="text-gray-600 text-sm md:text-base">{badge.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
