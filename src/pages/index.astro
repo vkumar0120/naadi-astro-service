@@ -13,6 +13,14 @@ import TrustBadges from '../components/TrustBadges.astro';
 import CallbackForm from '../components/CallbackForm.astro';
 import WhatsIncluded from '../components/WhatsIncluded.astro';
 import FounderSection from '../components/FounderSection.astro';
+
+const galleryImages = [
+  '/assets/images/nadi/Thillai%20arthi%202.jpeg',
+  '/assets/images/nadi/Thillai%20arthi%20post.jpeg',
+  '/assets/images/nadi/Thillai%20sitting%20post.jpeg',
+  '/assets/images/nadi/Thillai%20with%20customer%202.jpeg',
+  '/assets/images/nadi/Thillai%20with%20customer.jpeg'
+];
 ---
 
 <Layout 
@@ -33,7 +41,11 @@ import FounderSection from '../components/FounderSection.astro';
           Discover the predictions and guidance recorded centuries ago — uniquely for you
         </p>
         <div class="mb-8 flex justify-center animate-fade-in" style="animation-delay: 0.4s;">
-          <img src="/assets/images/nadi/mem2.jpg" alt="Ancient Nadi Palm Leaf Astrology Reading by Guruji Thillaimani at Vaitheeswaran Koil Temple - Authentic Spiritual Guidance" class="rounded-lg shadow-lg max-w-full h-auto md:max-w-2xl" />
+          <img
+            src="/assets/images/nadi/mem2.jpg"
+            alt="Ancient Nadi Palm Leaf Astrology Reading by Guruji Thillaimani at Vaitheeswaran Koil Temple - Authentic Spiritual Guidance"
+            class="rounded-lg shadow-lg max-w-full h-auto md:max-w-2xl"
+          />
         </div>
         <p class="text-lg mb-8 leading-relaxed animate-fade-in" style="animation-delay: 0.6s;">
           Authentic Sree Agasthiya Maha Siva Nadi Astrology from Vaitheeswaran Koil. 
@@ -53,6 +65,27 @@ import FounderSection from '../components/FounderSection.astro';
 
   <!-- Trust Badges -->
   <TrustBadges />
+
+  <!-- Photo Gallery -->
+  <section class="py-16 bg-gradient-to-br from-amber-50 via-white to-orange-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center mb-10">
+        <p class="text-primary font-semibold uppercase tracking-wide mb-2">Our Moments</p>
+        <h2 class="text-4xl font-bold text-gray-800">Thillai in Sacred Prayer & Guidance</h2>
+      </div>
+
+      <div class="gallery-frame mx-auto">
+        {galleryImages.map((image, index) => (
+          <img
+            src={image}
+            alt="Guruji Thillaimani gallery image"
+            class:list={['gallery-slide', index === 0 ? 'is-active' : '']}
+            style={`animation-delay: ${index * 5}s;`}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
 
   <!-- Founder Section -->
   <FounderSection />
@@ -236,3 +269,53 @@ import FounderSection from '../components/FounderSection.astro';
   <Footer />
   <WhatsAppButton />
 </Layout>
+
+<style>
+  .gallery-frame {
+    position: relative;
+    width: min(100%, 980px);
+    height: clamp(300px, 42vw, 520px);
+    margin: 0 auto;
+    background: rgba(255,255,255,0.45);
+    border-radius: 28px;
+    overflow: hidden;
+  }
+
+  .gallery-slide {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transform: scale(1.01);
+    animation: galleryFade 22.5s infinite;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    border-radius: 20px;
+  }
+
+  .gallery-slide.is-active {
+    opacity: 1;
+  }
+
+  @keyframes galleryFade {
+    0%, 12% {
+      opacity: 0;
+    }
+    15%, 30% {
+      opacity: 1;
+    }
+    35%, 100% {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .gallery-frame {
+      height: 300px;
+    }
+  }
+</style>
