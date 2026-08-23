@@ -9,8 +9,8 @@ interface Props {
 
 const { 
   title, 
-  description = "Sree Agasthiya Maha Siva Nadi Astrology - Expert Nadi Astrology Services in Vaitheeswaran Koil and Trichy",
-  keywords = "nadi astrology, siva nadi, vaitheeswaran koil, nadi jothidam, palm leaf astrology, agasthiya nadi, tamil nadu astrology, trichy astrologer, accurate nadi predictions, online nadi reading",
+  description = "Authentic Nadi Astrology in Vaitheeswaran Koil and Trichy. Explore ancient palm leaf predictions, Nadi Jothidam, Agasthiya Nadi, Siva Nadi, karmic guidance, life path analysis, past-life insights, spiritual remedies, and personalized astrology guidance by Guruji Thillaimani.",
+  keywords = "Nadi Astrology, nadi astrology, nadi jothidam, palm leaf astrology, agasthiya nadi astrology, siva nadi astrology, vaitheeswaran koil nadi, trichy nadi astrology, authentic nadi reading, ancient palm leaf predictions, karmic guidance, past life reading, spiritual remedies, astrology consultation, tamil nadu astrology, guruji thillaimani, online nadi astrology, personalized nadi reading, traditional astrology, vaitheeswaran koil astrologer, divine palm leaf guidance",
   image = "https://naadiastroservice.com/assets/images/nadi/mem2.jpg",
   url = Astro.url.href
 } = Astro.props;
@@ -25,6 +25,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
+    <meta name="subject" content="Nadi Astrology, palm leaf astrology, Vaitheeswaran Koil readings, spiritual guidance and ancient predictions" />
+    <meta name="classification" content="Astrology, Spiritual Guidance, Nadi Reading, Palm Leaf Predictions" />
     <meta name="author" content="Guruji Sri Thillaimani - Sree Agasthiya Maha Siva Nadi Astrology" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow" />
@@ -41,6 +43,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="revisit-after" content="7 days" />
     <meta name="rating" content="General" />
     <meta name="distribution" content="global" />
+    <meta name="theme-color" content="#7a3b1f" />
     
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
@@ -70,8 +73,42 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
         "@type": "LocalBusiness",
         "name": "Sree Agasthiya Maha Siva Nadi Astrology",
         "image": "https://naadiastroservice.com/assets/images/nadi/mem2.jpg",
-        "description": "Authentic Nadi Astrology services with ancient palm leaf predictions. Expert readings by Guruji Thillaimani with 25+ years experience.",
+        "description": "Authentic Nadi Astrology services offering ancient palm leaf readings, Nadi Jothidam, Agasthiya Nadi, Siva Nadi, karmic guidance, spiritual remedies, life prediction, and personalized consultation by Guruji Thillaimani in Vaitheeswaran Koil and Trichy.",
         "@id": "https://naadiastroservice.com",
+        "url": "https://naadiastroservice.com",
+        "telephone": ["+919500639334", "+919842020237"],
+        "email": "ma.thillaimani@gmail.com",
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, UPI, Bank Transfer, Online Payment",
+        "currenciesAccepted": "INR, USD",
+        "areaServed": [
+          {"@type": "City", "name": "Vaitheeswaran Koil"},
+          {"@type": "City", "name": "Trichy"},
+          {"@type": "City", "name": "Chennai"},
+          {"@type": "State", "name": "Tamil Nadu"},
+          {"@type": "Country", "name": "India"}
+        ],
+        "serviceType": [
+          "Nadi Astrology",
+          "Palm Leaf Reading",
+          "Nadi Jothidam",
+          "Agasthiya Nadi",
+          "Siva Nadi",
+          "Past Life Reading",
+          "Karmic Guidance",
+          "Spiritual Remedies",
+          "Online Astrology Consultation"
+        ],
+        "knowsAbout": [
+          "Nadi Astrology",
+          "Palm leaf astrology",
+          "Ancient prediction manuscripts",
+          "Karma analysis",
+          "Past life insights",
+          "Life guidance",
+          "Spiritual remedies",
+          "Vedic astrology"
+        ],
         "address": [
           {
             "@type": "PostalAddress",
@@ -102,9 +139,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
             "longitude": "78.6956"
           }
         ],
-        "url": "https://naadiastroservice.com",
-        "telephone": ["+919500639334", "+919842020237"],
-        "email": "ma.thillaimani@gmail.com",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -113,29 +147,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
             "closes": "21:00"
           }
         ],
-        "priceRange": "$$",
         "sameAs": [
           "https://www.facebook.com/agasthiyamahasivanaadi",
           "https://www.instagram.com/agasthiyamahasivanaadi",
           "https://www.youtube.com/@agasthiyamahasivanaadi"
-        ],
-        "areaServed": [
-          {
-            "@type": "City",
-            "name": "Vaitheeswaran Koil"
-          },
-          {
-            "@type": "City",
-            "name": "Trichy"
-          },
-          {
-            "@type": "State",
-            "name": "Tamil Nadu"
-          },
-          {
-            "@type": "Country",
-            "name": "India"
-          }
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -182,8 +197,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
           "email": "ma.thillaimani@gmail.com",
           "telephone": "+919500639334"
         },
-        "paymentAccepted": "Cash, UPI, Bank Transfer, Online Payment",
-        "currenciesAccepted": "INR, USD"
       }
     </script>
     
@@ -210,6 +223,47 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
           "@type": "Organization",
           "name": "Sree Agasthiya Maha Siva Nadi Astrology"
         }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Nadi Astrology?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nadi Astrology is an ancient spiritual system rooted in Tamil tradition where life predictions are believed to be recorded in palm leaf manuscripts written by enlightened sages such as Agastya and Shiva. These manuscripts are matched to an individual through thumb impression and birth details to reveal details about their past, present, and future."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does a Nadi reading work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Nadi reading usually begins with the client providing thumb impression, birth details, and personal information. The astrologer then searches the relevant palm leaf bundle and identifies the manuscript associated with the individual, after which the reading explains their life journey, karmic influences, remedies, and guidance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is authentic Nadi Astrology practiced?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Authentic Nadi Astrology is traditionally associated with Vaitheeswaran Koil in Tamil Nadu, India. It is also widely practiced in Trichy and through online consultations with experienced astrologers who preserve the original palm-leaf reading tradition."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Agasthiya Nadi and Siva Nadi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Agasthiya Nadi and Siva Nadi are two major branches of Nadi Astrology. Agasthiya Nadi is linked to the teachings of Sage Agastya, while Siva Nadi is associated with divine guidance from Lord Shiva and includes spiritual insight, karmic correction, and remedies."
+            }
+          }
+        ]
       }
     </script>
     
