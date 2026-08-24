@@ -49,6 +49,18 @@ ${urlEntries}
 </urlset>`;
 }
 
+function generateSitemapIndexXML() {
+  const currentDate = new Date().toISOString().split('T')[0];
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${SITE_URL}/sitemap.xml</loc>
+    <lastmod>${currentDate}</lastmod>
+  </sitemap>
+</sitemapindex>`;
+}
+
 async function main() {
   try {
     console.log('🔍 Scanning for HTML files...');
@@ -58,11 +70,15 @@ async function main() {
     console.log(`✅ Found ${urls.length} pages`);
     
     const sitemapXML = generateSitemapXML(urls);
+    const sitemapIndexXML = generateSitemapIndexXML();
     const sitemapPath = join(DIST_DIR, 'sitemap.xml');
+    const sitemapIndexPath = join(DIST_DIR, 'sitemap-index.xml');
     
     await writeFile(sitemapPath, sitemapXML, 'utf-8');
+    await writeFile(sitemapIndexPath, sitemapIndexXML, 'utf-8');
     
     console.log(`✅ Sitemap generated at ${sitemapPath}`);
+    console.log(`✅ Sitemap index generated at ${sitemapIndexPath}`);
     console.log(`📄 URLs included: ${urls.length}`);
   } catch (error) {
     console.error('❌ Error generating sitemap:', error);
